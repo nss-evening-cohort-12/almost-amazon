@@ -1,10 +1,11 @@
 import bookData from '../helpers/data/bookData.js';
 import utils from '../helpers/utils.js';
+import cart from './cart.js';
 
 const addToCartEvent = (e) => {
   e.preventDefault();
-
-  console.log('You added the book to the cart!!!');
+  const book = bookData.getBook();
+  cart.addToCart(book);
 };
 
 const makeStore = () => {
