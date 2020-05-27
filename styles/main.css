@@ -6,6 +6,10 @@ body {
   border: 2px solid brown;
 }
 
+#cart {
+  border: 2px solid chartreuse;
+}
+
 #store button {
   margin: 10px;
 }
