@@ -21,7 +21,9 @@ const makeStore = () => {
 
   utils.printToDom('#store', domString);
 
-  document.querySelector('#add-to-cart').addEventListener('click', addToCartEvent);
+  // document.querySelector('#add-to-cart').addEventListener('click', addToCartEvent);
+  $('#add-to-cart').click(addToCartEvent);
+  // $('body').on('click', '#add-to-cart', addToCartEvent);
 };
 
 export default { makeStore };
