@@ -12,7 +12,7 @@ const cartToDom = () => {
 
   for (let i = 0; i < myCart.length; i++) {
     const cartItem = myCart[i];
-    domString += `<h3>${cartItem.title}</h3>`;
+    domString += `<h3 class="cart-item">${cartItem.title}</h3>`;
   }
 
   utils.printToDom('#cart', domString);
